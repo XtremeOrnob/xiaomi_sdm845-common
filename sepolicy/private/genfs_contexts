@@ -1,0 +1,2 @@
+# FPS Tile
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/sde-crtc-0/measured_fps       u:object_r:sysfs_fps:s0

@@ -1,1 +1,5 @@
+# FPS Tile
+type sysfs_fps, sysfs_type, fs_type;
+
 type sysfs_fp_proximity, sysfs_type, fs_type;
+
