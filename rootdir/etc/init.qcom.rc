@@ -739,3 +739,7 @@ on property:init.svc.vendor.hwcomposer-2-3=restarting
 on property:vold.decrypt=trigger_restart_framework && property:ro.crypto.type=block && property:persist.ppd.fde.config=0
     setprop persist.ppd.fde.config 1
     start ppd
+
+on property:persist.sys.device_provisioned=1
+    setprop dalvik.vm.dex2oat-cpu-set 0,1,2,3,6,7
+    setprop dalvik.vm.dex2oat-threads 6
