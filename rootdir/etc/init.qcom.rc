@@ -733,3 +733,6 @@ on property:init.svc.tcpdump=running
 
 on property:init.svc.vendor.ipacm-diag=running
     stop vendor.ipacm-diag
+
+on property:dev.bootcomplete=1
+    restart ril-daemon
