@@ -4,6 +4,12 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Broken rules
+BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
+BUILD_BROKEN_PREBUILT_ELF_FILES := true
+BUILD_BROKEN_VINTF_PRODUCT_COPY_FILES := true
+
 BOARD_VENDOR := xiaomi
 
 COMMON_PATH := device/xiaomi/sdm845-common
@@ -165,6 +171,3 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/sdm845-common/BoardConfigVendor.mk
-
-# Broken Rules
-BUILD_BROKEN_DUP_RULES := true
