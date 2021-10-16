@@ -9,7 +9,7 @@ ro.lmk.log_stats=true
 ro.build.shutdown_timeout=2
 
 # IORap
-iorapd.readahead.enable=true
+persist.device_config.runtime_native_boot.iorap_readahead_enable=true
 
 # USB debugging
 persist.sys.usb.config=mtp,adb
