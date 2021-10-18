@@ -168,8 +168,7 @@ PRODUCT_PACKAGES += \
     init.safailnet.rc \
     init.qcom.usb.sh \
     init.recovery.qcom.rc \
-    ueventd.qcom.rc \
-    apex_metadata.rc
+    ueventd.qcom.rc
 
 # Context Hub
 PRODUCT_PACKAGES += \
