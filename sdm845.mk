@@ -151,6 +151,7 @@ PRODUCT_PACKAGES += \
     init.qcom.sensors.sh \
     init.qcom.sh \
     init.qcom.usb.rc \
+    init.safailnet.rc \
     init.qcom.usb.sh \
     init.recovery.qcom.rc \
     ueventd.qcom.rc \
