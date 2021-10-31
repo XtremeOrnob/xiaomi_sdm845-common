@@ -113,6 +113,19 @@ TARGET_USES_MKE2FS := true
 
 TARGET_COPY_OUT_VENDOR := vendor
 
+# QCOM variant
+TARGET_QCOM_AUDIO_VARIANT := caf-sdm845
+TARGET_QCOM_DISPLAY_VARIANT := caf-sdm845
+TARGET_QCOM_MEDIA_VARIANT := caf-sdm845
+
+#HALS
+SRC_MEDIA_HAL_DIR := hardware/qcom-caf/sdm845/media
+SRC_DISPLAY_HAL_DIR := hardware/qcom-caf/sdm845/display
+SRC_AUDIO_HAL_DIR := hardware/qcom-caf/sdm845/audio
+PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/sdm845/display
+PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/sdm845/audio
+PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/sdm845/media
+
 # Power
 TARGET_POWERHAL_MODE_EXT := $(COMMON_PATH)/power/power-mode.cpp
 TARGET_USES_INTERACTION_BOOST := true
