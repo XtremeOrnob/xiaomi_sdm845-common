@@ -211,8 +211,8 @@ PRODUCT_PACKAGES += \
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.3-service.clearkey
-    
+    android.hardware.drm@1.4-service.clearkey
+
 # QTI Perf Component
 TARGET_COMMON_QTI_COMPONENTS := perf
 
