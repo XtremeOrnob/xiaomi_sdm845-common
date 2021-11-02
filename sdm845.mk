@@ -304,12 +304,6 @@ PRODUCT_PACKAGES += \
 # PRODUCT_PACKAGES += \
 #    vendor.lineage.livedisplay@2.0-service-sdm
 
-#libProcess group
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json \
-    $(LOCAL_PATH)/configs/cgroups.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json
-
-
 # Media
 PRODUCT_PACKAGES += \
     libavservices_minijail \
