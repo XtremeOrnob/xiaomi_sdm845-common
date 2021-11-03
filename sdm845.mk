@@ -168,6 +168,7 @@ PRODUCT_PACKAGES += \
     init.safailnet.rc \
     init.qcom.usb.sh \
     init.recovery.qcom.rc \
+    init.uclamp.rc \
     ueventd.qcom.rc
 
 # Context Hub
