@@ -338,12 +338,12 @@ vendor/lib64/libllvm-glnext.so|ba9edbd59e96185ef612f47fa7b6f340e60c1f3c
 vendor/lib64/libllvm-qcom.so|cc4be65b93128742f5ee9bec9cbf4ad65a88fa1d
 
 # Graphics (Adreno) - from LA.UM.9.14.r1-18900-LAHAINA.QSSI12.0 - patched to use the mapper shims
-vendor/lib/egl/eglSubDriverAndroid.so|cac529f4cc2381fc8985caded98dc7236d0de43f
-vendor/lib/hw/vulkan.adreno.so|ca43eefab537c1ee8ec4bb9dbae06331f2bd872b
-vendor/lib/libCB.so|7b518b962a77e28807f121de0383dda4f992912c
-vendor/lib64/egl/eglSubDriverAndroid.so|ac9099723b30614cf7c61c667204a392959694db
-vendor/lib64/hw/vulkan.adreno.so|3e981baca903027296ddccfc4b7fb73e4c190d90
-vendor/lib64/libCB.so|71bceb2a8815a368078d565192e14c7838bc8f1c
+vendor/lib/egl/eglSubDriverAndroid.so|e6e462129effba324143fd85632b46929c79aa69
+vendor/lib/hw/vulkan.adreno.so|076c4e8ed02859beaab00809267e4b3276983c2e
+vendor/lib/libCB.so|2ee853891c24992ad86fbb251677468030b851e6
+vendor/lib64/egl/eglSubDriverAndroid.so|e1fc682aa31b39a3e7fb46e7379c94e21c0ee826
+vendor/lib64/hw/vulkan.adreno.so|c8f4b73a8f84f64aaade1e4ab78b4c814b825640
+vendor/lib64/libCB.so|0c7a3534e920a3fb4791f53752df5a34c39877f4
 
 # Graphics (Adreno firmware) - LA.UM.9.3.r1-02700-sdm845.0
 vendor/firmware/a630_gmu.bin
