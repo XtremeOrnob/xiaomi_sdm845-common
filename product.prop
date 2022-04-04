@@ -1,9 +1,6 @@
 # Blur
 ro.surface_flinger.supports_background_blur=0
 
-# Graphics
-debug.hwui.renderer=skiavk
-
 # LMKD
 ro.config.low_ram=false
 ro.lmk.log_stats=true
