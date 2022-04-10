@@ -609,3 +609,7 @@ PRODUCT_COPY_FILES += \
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dataroaming=true
+
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
