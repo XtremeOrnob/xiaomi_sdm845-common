@@ -601,8 +601,7 @@ PRODUCT_PACKAGES += \
     libnl \
     libwfdaac_vendor
 
-# PRODUCT_BOOT_JARS += \
-#    WfdCommon
+include vendor/xiaomi/sdm845-common-extra/wfd.mk
 
 # System
 PRODUCT_PROPERTY_OVERRIDES += \
