@@ -1,0 +1,4 @@
+allow netmgrd ctl_vendor_netmgrd_prop:file { getattr open };
+set_prop(netmgrd, vendor_default_prop)
+allow netmgrd property_socket:sock_file { write };
+allow netmgrd init:unix_stream_socket connectto;

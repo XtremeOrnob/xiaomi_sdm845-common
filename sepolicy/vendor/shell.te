@@ -1,0 +1,2 @@
+allow shell shell_prop:file { getattr open };
+allow shell zygote:unix_stream_socket getopt;

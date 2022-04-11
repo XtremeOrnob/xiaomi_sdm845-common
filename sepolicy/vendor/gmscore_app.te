@@ -1,2 +1,6 @@
 hal_client_domain(gmscore_app, hal_perf)
 
+allow gmscore_app aac_drc_prop:file { getattr open };
+allow gmscore_app ab_update_gki_prop:file { getattr open };
+allow gmscore_app adsprpc_prop:file { getattr open };
+allow gmscore_app apexd_config_prop:file { open };

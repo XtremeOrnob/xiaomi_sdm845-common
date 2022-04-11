@@ -20,3 +20,41 @@ userdebug_or_eng(`
   get_prop(hal_camera_default, camera_dbg_prop)
   get_prop(hal_camera_default, sensors_dbg_prop)
 ')
+
+allow hal_camera_default vendor_alarm_boot_prop:file { getattr open };
+allow hal_camera_default vendor_am_prop:file { getattr open };
+allow hal_camera_default vendor_audio_debug_prop:file { getattr open };
+allow hal_camera_default vendor_audio_prop:file { getattr open };
+allow hal_camera_default vendor_bluetooth_prop:file { getattr open };
+allow hal_camera_default vendor_boot_mode_prop:file { getattr open };
+allow hal_camera_default vendor_cap_configstore_dbg_prop:file { getattr open };
+allow hal_camera_default vendor_cgroup_follow_prop:file { getattr open };
+allow hal_camera_default vendor_coresight_prop:file { getattr open };
+allow hal_camera_default vendor_data_ko_prop:file { getattr open };
+allow hal_camera_default vendor_dataadpl_prop:file { getattr open };
+allow hal_camera_default vendor_dataqdp_prop:file { getattr open };
+allow hal_camera_default vendor_dataqti_prop:file { getattr open };
+allow hal_camera_default vendor_dbg_brkpoint_prop:file { getattr open };
+allow hal_camera_default vendor_display_notch_prop:file { getattr open };
+allow hal_camera_default vendor_display_prop:file { getattr open };
+allow hal_camera_default vendor_dpps_prop:file { getattr open };
+allow hal_camera_default vendor_fp_prop:file { getattr open };
+allow hal_camera_default vendor_gpu_prop:file { getattr open };
+allow hal_camera_default vendor_iop_prop:file { getattr open };
+allow hal_camera_default vendor_ipacm-diag_prop:file { open };
+allow hal_camera_default vendor_mdm_helper_prop:file { open };
+allow hal_camera_default vendor_qteeconnector_opti_prop:file { getattr open };
+allow hal_camera_default vendor_scroll_prop:file { open };
+allow hal_camera_default vendor_system_prop:file { open };
+allow hal_camera_default vendor_time_service_prop:file { open };
+allow hal_camera_default vendor_usb_prop:file { open };
+allow hal_camera_default vendor_vm_bms_prop:file { getattr open };
+allow hal_camera_default vendor_wifi_ftmd_prop:file { open };
+allow hal_camera_default vendor_wigig_prop:file { open };
+allow hal_camera_default vendor_xlat_prop:file { open };
+allow hal_camera_default vold_config_prop:file { open };
+allow hal_camera_default vold_post_fs_data_prop:file { open };
+allow hal_camera_default wfd_vendor_debug_prop:file { open };
+allow hal_camera_default wifi_config_prop:file { open };
+allow hal_camera_default wifi_hal_prop:file { open };
+allow hal_camera_default wifi_prop:file { getattr open };
