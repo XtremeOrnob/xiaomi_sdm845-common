@@ -11,3 +11,11 @@ userdebug_or_eng(`
   allow rild diag_device:chr_file rw_file_perms;
 ')
 dontaudit rild diag_device:chr_file rw_file_perms;
+
+allow rild vendor_data_file:dir { add_name write };
+allow rild ctl_qcrild_prop:file { getattr open };
+allow rild ctl_rildaemon_prop:file { getattr open };
+allow rild ctl_vendor_rild_prop:file { getattr open };
+
+allow rild vendor_data_file:dir rw_dir_perms;
+allow rild vendor_data_file:file create_file_perms;
