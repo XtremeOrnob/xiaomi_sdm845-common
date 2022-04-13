@@ -253,7 +253,7 @@ PRODUCT_PACKAGES += \
     memtrack.sdm845 \
     vendor.display.config@1.0.vendor \
     vendor.display.config@2.0 \
-    vendor.qti.hardware.display.allocator@1.0-service
+    vendor.qti.hardware.display.allocator-service
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -445,6 +445,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
     $(LOCAL_PATH)/permissions/system_ext-privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-qti.xml
 
+# Qtimapper Shim
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.display.mappershim \
+    vendor.qti.hardware.display.mapperextensionsshim \
+    android.hardware.graphics.mappershim
+
 # Radio
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.0 \
@@ -595,8 +601,7 @@ PRODUCT_PACKAGES += \
     libnl \
     libwfdaac_vendor
 
-# PRODUCT_BOOT_JARS += \
-#    WfdCommon
+include vendor/xiaomi/sdm845-common-extra/wfd.mk
 
 # System
 PRODUCT_PROPERTY_OVERRIDES += \
