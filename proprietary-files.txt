@@ -341,21 +341,11 @@ vendor/lib64/libllvm-qcom.so|cc4be65b93128742f5ee9bec9cbf4ad65a88fa1d
 
 # Graphics (Adreno) - from LA.UM.9.14.r1-18900-LAHAINA.QSSI12.0 - patched to use the mapper shims
 vendor/lib/egl/eglSubDriverAndroid.so|e6e462129effba324143fd85632b46929c79aa69
+vendor/lib/hw/vulkan.adreno.so|076c4e8ed02859beaab00809267e4b3276983c2e
 vendor/lib/libCB.so|2ee853891c24992ad86fbb251677468030b851e6
 vendor/lib64/egl/eglSubDriverAndroid.so|e1fc682aa31b39a3e7fb46e7379c94e21c0ee826
+vendor/lib64/hw/vulkan.adreno.so|c8f4b73a8f84f64aaade1e4ab78b4c814b825640
 vendor/lib64/libCB.so|0c7a3534e920a3fb4791f53752df5a34c39877f4
-
-# Graphics (Vulkan) - from OnePlus10Pro 12/SKQ1.211019.001/1644490122337 - patched to co-exist with other adreno blobs
-vendor/lib/hw/vulkan.adreno.so|cccd196d568509c902386daa333b81f63d4e6405
-vendor/lib/notadreno_utils.so|41e91b0c9cdbe48a6fd417284391bb2a615eebfd
-vendor/lib/notgsl.so|0c6a950811581b90f2d2841a93b5a222e6f9f871
-vendor/lib/notllvm-glnext.so|228609ff5539323d0ea3621d1d6e9dd96ca92397
-vendor/lib/notllvm-qgl.so|e62135427b50829ada28427b5d3a6db9535f0a1d
-vendor/lib64/hw/vulkan.adreno.so|9219e8c075e6495fa4525984420a23620caf87a8
-vendor/lib64/notadreno_utils.so|ff3bd520793821cbcc7c6fd71179b1ad5cf5a7d0
-vendor/lib64/notgsl.so|f931d2c389747c906f2d4e8b9927e696f8239b41
-vendor/lib64/notllvm-glnext.so|ef78f5c42c268abe7abf89bf4e0a8bddaab32e34
-vendor/lib64/notllvm-qgl.so|28a748fe7ed5917a74c57d08c736ce2d1717e9b6
 
 # Graphics (Adreno firmware)
 vendor/firmware/a630_gmu.bin
