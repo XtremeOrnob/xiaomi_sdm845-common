@@ -594,6 +594,9 @@ PRODUCT_PACKAGES += \
 
 include vendor/xiaomi/sdm845-common-extra/wfd.mk
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/wfdconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig.xml
+
 # System
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.binary_xml=false
