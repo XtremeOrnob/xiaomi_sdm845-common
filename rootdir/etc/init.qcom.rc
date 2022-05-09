@@ -49,6 +49,11 @@ on early-init
     chmod 0620 /dev/kmsg
 
 on init
+
+    # create an uclamp group for camera-specific processes
+    write /dev/cpuctl/camera-daemon/cpu.uclamp.latency_sensitive 1
+    write /dev/cpuctl/camera-daemon/cpu.uclamp.min 0
+
     # Create cgroup mount point for memory
     mkdir /sys/fs/cgroup/memory/bg 0750 root system
     write /sys/fs/cgroup/memory/bg/memory.swappiness 140
@@ -719,6 +724,10 @@ on property:dev.bootcomplete=1
 
 on property:vendor.post_boot.parsed=1
 
+    # Enable idle state listener
+    write /sys/class/drm/card0/device/idle_encoder_mask 1
+    write /sys/class/drm/card0/device/idle_timeout_ms 100
+
     # Block layer tuning: discard chunk size up to 128MB
     # Otherwise, contiguous discards can be merged
     write /sys/block/sda/queue/discard_max_bytes 134217728
@@ -726,4 +735,16 @@ on property:vendor.post_boot.parsed=1
     # Back to default VM settings
     write /proc/sys/vm/dirty_expire_centisecs 3000
     write /proc/sys/vm/dirty_background_ratio 10
+    write /proc/sys/vm/watermark_scale_factor 1
 
+    #RT scheduler
+    write /proc/sys/kernel/sched_rt_period_us 1000000
+    write /proc/sys/kernel/sched_rt_runtime_us 1000000
+    write /proc/sys/kernel/sched_rr_timeslice_ms 1
+    write /proc/sys/kernel/sched_util_clamp_min_rt_default 0
+
+    # Setup runtime uclamp
+    write /dev/cpuctl/foreground/cpu.uclamp.latency_sensitive 1
+    write /dev/cpuctl/foreground/cpu.uclamp.min 0
+    write /dev/cpuctl/top-app/cpu.uclamp.latency_sensitive 1
+    write /dev/cpuctl/top-app/cpu.uclamp.min 10
