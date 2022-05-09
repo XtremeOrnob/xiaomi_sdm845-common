@@ -716,3 +716,10 @@ on property:init.svc.vendor.ipacm-diag=running
 
 on property:dev.bootcomplete=1
     restart ril-daemon
+
+on property:vendor.post_boot.parsed=1
+
+    # Back to default VM settings
+    write /proc/sys/vm/dirty_expire_centisecs 3000
+    write /proc/sys/vm/dirty_background_ratio 10
+
