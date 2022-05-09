@@ -539,7 +539,7 @@ PRODUCT_PACKAGES += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.3-service-qti \
+    android.hardware.usb@1.0-service \
     android.hardware.usb.gadget@1.0 \
     android.hardware.usb.gadget@1.0.vendor \
     android.hardware.usb.gadget@1.1 \
