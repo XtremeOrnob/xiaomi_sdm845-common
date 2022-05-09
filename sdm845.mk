@@ -507,6 +507,7 @@ PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
+    hardware/xiaomi \
     vendor/qcom/opensource/usb/etc
 
 # Telephony
